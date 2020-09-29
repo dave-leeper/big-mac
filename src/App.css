@@ -1,38 +1,61 @@
 .App {
-  text-align: center;
+  position:             absolute;
+  display:              flex;
+  flex-direction:       column;
+  width:                100%;
+  height:               100%;
+  bottom:               0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.TopPanel {
+  display:              flex;
+  flex-direction:       column;
+  align-items:          center;
+  align-content:        center;
+  width:                100%;
+  height:               33%;
+  background-color:     #FFFFFF;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.MiddlePanel {
+  display:              flex;
+  flex-direction:       column;
+  align-items:          center;
+  align-content:        center;
+  width:                100%;
+  height:               33%;
+  background-color:     #EEEEEF;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.BottomPanel {
+  display:              flex;
+  flex-direction:       column;
+  align-items:          center;
+  align-content:        center;
+  width:                100%;
+  height:               33%;
+  background-color:     #FFFFFF;
 }
 
-.App-link {
-  color: #61dafb;
+.Form {
+  display:              flex;
+  flex-direction:       column;
+  align-items:          center;
+  align-content:        center;
+  width:                50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Country {
+  text-align:           center;
+  margin:               5px;
+}
+
+.TextInputColumn {
+  display:              flex;
+  flex-direction:       column;
+  width:                100%;
+}
+
+.Button {
+  margin:               5px;
 }

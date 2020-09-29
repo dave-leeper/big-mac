@@ -2,8 +2,12 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('Check for required elements', () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const countryDisplay = getByText(/You are in/i);
+  const inputField = getByText(/0/i);
+  const submitButton = getByText(/Submit/i);
+  expect(countryDisplay).toBeInTheDocument();
+  expect(inputField).toBeInTheDocument();
+  expect(submitButton).toBeInTheDocument();
 });
